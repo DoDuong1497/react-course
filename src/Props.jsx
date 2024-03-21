@@ -3,6 +3,8 @@ import React from 'react'
 /* Props
   - Props should read-only, meaning that they cannot be modified by the component itself
   - Passed from parent component to child component.
+  - luu y khi pass function component react in jsx:
+    - name should start with a capital letter
 */
 
 // rest operator: get all the remains properties of the object
@@ -16,7 +18,7 @@ function Welcome({ brand, color, year }) {
   )
 }
 
-function Props({ name, age = 10, address, ...restProps }) {
+function Props({ name, age = 10, address, children, component: Component, compoennt2, ...restProps }) {
   const cars = {
     brand: 'BMW',
     color: 'red',
@@ -27,15 +29,25 @@ function Props({ name, age = 10, address, ...restProps }) {
     name,
     age,
     city: address.city,
-    restProps
+    restProps,
+    children
   })
 
   return (
     <div>
       Hello {name}
+      <br />
+      {children}
 
       {/* <Welcome brand={cars.brand} color={cars.color} year={cars.year} /> */}
       <Welcome {...cars} /> {/* spread operator */}
+
+      {/* pass as function component */}
+      <h3>pass as function component</h3>
+      <Component />
+
+      <h3>pass execute react function component</h3>
+      {compoennt2}
     </div>
   )
 }

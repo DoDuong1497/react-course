@@ -6,8 +6,16 @@ import React from 'react';
 */
 
 import Props from './Props';
+import State from './State';
+
+function ErrorMessage() {
+  return (
+    <div>this is error message</div>
+  )
+}
 
 function App() {
+  const [updateTime, setUpdateTime] = React.useState(Date.now());
   const total = 100 + 200;
 
   // expression JSX
@@ -17,7 +25,13 @@ function App() {
   
   function renderButton() {
     return (
-      <button>Click me</button>
+      <button 
+        onClick={() => {
+          setUpdateTime(Date.now());
+        }}
+      >
+        Click me
+      </button>
     )
   }
 
@@ -53,9 +67,20 @@ function App() {
           city: 'Hanoi',
           country: 'Vietnam'
         }} // object
-      />
+        component={ErrorMessage}
+        compoennt2={<ErrorMessage />}
+      >
+        this is children  <br/>
+        <ErrorMessage />
+
+      </Props>
 
       <br />
+      <State 
+        updateTime={updateTime}
+      />
+
+
       <br />
       <br />
       <br />
