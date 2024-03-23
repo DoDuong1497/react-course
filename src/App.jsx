@@ -7,11 +7,10 @@ import React from 'react';
 
 import Props from './Props';
 import State from './State';
+import DuongComposeComponent from './sample-app/DuongComposerComponent';
 
 function ErrorMessage() {
-  return (
-    <div>this is error message</div>
-  )
+  return <div>this is error message</div>;
 }
 
 function App() {
@@ -19,20 +18,18 @@ function App() {
   const total = 100 + 200;
 
   // expression JSX
-  const renderExpression = (
-    <h5>Example expression {5 + 5}</h5>
-  )
-  
+  const renderExpression = <h5>Example expression {5 + 5}</h5>;
+
   function renderButton() {
     return (
-      <button 
+      <button
         onClick={() => {
           setUpdateTime(Date.now());
         }}
       >
         Click me
       </button>
-    )
+    );
   }
 
   const renderProductList = (
@@ -42,7 +39,7 @@ function App() {
       <li>Title: iphone</li>
       <li>Title: iphone</li>
     </>
-  )
+  );
 
   // return a single JSX element
   return (
@@ -55,31 +52,25 @@ function App() {
       {renderButton()}
 
       <h3>One top level element</h3>
-      <ul>
-        {renderProductList}
-      </ul>
+      <ul>{renderProductList}</ul>
 
       <h1>Props</h1>
-      <Props 
-        name="tony" // string
+      <Props
+        name='tony' // string
         isStudent={false} // boolean
         address={{
           city: 'Hanoi',
-          country: 'Vietnam'
+          country: 'Vietnam',
         }} // object
         component={ErrorMessage}
         compoennt2={<ErrorMessage />}
       >
-        this is children  <br/>
+        this is children <br />
         <ErrorMessage />
-
       </Props>
 
       <br />
-      <State 
-        updateTime={updateTime}
-      />
-
+      <State updateTime={updateTime} />
 
       <br />
       <br />
@@ -89,8 +80,10 @@ function App() {
       <br />
       <br />
       <br />
+
+      <DuongComposeComponent />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

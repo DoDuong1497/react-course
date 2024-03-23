@@ -1,0 +1,49 @@
+/* Sample App Css - Duong */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+}
+
+.card-header {
+  color: #fff;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: #ffc100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #fff;
+  transition: all ease 0.5s;
+}
+
+button:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.125);
+}
