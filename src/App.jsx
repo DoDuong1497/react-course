@@ -9,7 +9,9 @@ import Props from './Props';
 import State from './State';
 import DuongComposeComponent from './sample-app/DuongComposerComponent';
 import ConditionalRendering from './ConditionalRendering';
-
+import GuestGreetingTony from './sample-app/GuestGreetingTony';
+import ListAndKey from './ListAndKey';
+import LiftingStateUp from './LiftingStateUp';
 
 function ErrorMessage() {
   return <div>this is error message</div>;
@@ -81,6 +83,15 @@ function App() {
 
       <br />
       <ConditionalRendering />
+
+      <br />
+      <GuestGreetingTony />
+
+      <br />
+      <ListAndKey />
+
+      <br />
+      <LiftingStateUp />
 
       <br />
       <br />

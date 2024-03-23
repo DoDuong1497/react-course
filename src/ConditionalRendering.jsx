@@ -39,6 +39,7 @@ function ConditionalRendering() {
       tenary operator: {count > 3 ? 'please click so far' : 'please click me'} <br />
       element variable: {section}
       <br /><br />
+      
 
       <button type="button" onClick={handleIncrement}>Increment</button>
     </div>
