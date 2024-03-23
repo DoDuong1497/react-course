@@ -8,6 +8,8 @@ import React from 'react';
 import Props from './Props';
 import State from './State';
 import DuongComposeComponent from './sample-app/DuongComposerComponent';
+import ConditionalRendering from './ConditionalRendering';
+
 
 function ErrorMessage() {
   return <div>this is error message</div>;
@@ -71,17 +73,18 @@ function App() {
 
       <br />
       <State updateTime={updateTime} />
+      
 
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
       <DuongComposeComponent />
+
+
+      <br />
+      <ConditionalRendering />
+
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

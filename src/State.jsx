@@ -37,7 +37,6 @@ function State() {
     setCount((prevState) => {
       return prevState + 1
     })
-
   }
 
   function handleUpdateMessage() {

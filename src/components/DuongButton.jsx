@@ -1,5 +1,5 @@
-function DuongButton({ text = 'Increment', type = 'button' }) {
-  return <button type={type}>{text}</button>;
+function DuongButton({ type = 'button', buttonText = 'Click me' }) {
+  return <button type={type}>{buttonText}</button>;
 }
 
 export default DuongButton;
