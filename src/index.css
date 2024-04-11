@@ -47,3 +47,22 @@ button:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.125);
 }
+
+.boxes {
+  height: 100px;
+  width: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.box_container {
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+}

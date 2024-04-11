@@ -12,6 +12,7 @@ import ConditionalRendering from './ConditionalRendering';
 import GuestGreetingTony from './sample-app/GuestGreetingTony';
 import ListAndKey from './ListAndKey';
 import LiftingStateUp from './LiftingStateUp';
+import GenerateBoxTony from './sample-app/GenerateBoxTony';
 
 function ErrorMessage() {
   return <div>this is error message</div>;
@@ -92,6 +93,9 @@ function App() {
 
       <br />
       <LiftingStateUp />
+
+      <br />
+      <GenerateBoxTony />
 
       <br />
       <br />
